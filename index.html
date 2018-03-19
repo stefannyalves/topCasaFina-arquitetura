@@ -3,16 +3,82 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Calcula apartir do tamanho da tela do dispositivo. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Calcula apartir do tamanho da tela do dispositivo. -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
     <title>TopCasaFina - Arquitetura</title>
+    <link rel="shortcut icon" href="favicon.ico">
 </head>
 
 <body>
-    <h2>Sobre nós</h2>
-    <img src="img/empresa.jpg" class="img-responsive">
-    <h1></h1>
+    <div class="container">
+        <h2>Sobre nós</h2>
+        <img src="img/empresa.jpg" class="img-responsive">
+    
+        <div class="panel-group paineis-margin" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Desde de 1935
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                            A TopCasaFina Arquitetura esta no mercado desde 1935.
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                           Preços acessíveis
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+                        A TopCasaFina Arquitetura esta no mercado desde 1935.
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            A alegria de colaborar para um mundo mais bonito.
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body">
+                        A TopCasaFina Arquitetura esta no mercado desde 1935.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <div style="background-color:#ddd; padding:10px;">
+            <h2><strong>Mais de 300 prêmios em design e em conforto.</strong></h2>
+            <span>Mais de 5 milhões de clientes satisfeitos em todo o mundo.</span>
+        </div>
+        <!-- <h3 data-toggle="collapse" data-target="#primeiro-paragrafo"> Desde 1935</h3>
+    <p id="primeiro-paragrafo" class="collapse in">A TopCasaFina Arquitetura esta no mercado desde 1935.</p>
+    <h3 data-toggle="collapse" data-target="#segundo-paragrafo"> Preços acessíveis</h3>
+    <p id="segundo-paragrafo" class="collapse">A TopCasaFina Arquitetura esta no mercado desde 1935.</p>
+    <h3 data-toggle="collapse" data-target="#terceiro-paragrafo"> A alegria de colaborar para um mundo mais bonito.</h3>
+    <p id="terceiro-paragrafo" class="collapse">A TopCasaFina Arquitetura esta no mercado desde 1935.</p> -->
+    
+
 
 </body>
 
